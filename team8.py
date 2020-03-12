@@ -8,8 +8,8 @@ import random
 ####
 
 team_name = 'Hairline Gang'
-strategy_name = 'If they betryed last or if they only colluded last, we betray no matter what'
-strategy_description = 'Our Bibles are better than yours'
+strategy_name = 'Mainly Betray, Sometimes Collude'
+strategy_description = 'If they betrayed last or if they only colluded last, we betray no matter what'
 
 def move(my_history, their_history, my_score, their_score):
   if len(my_history) == 0:
