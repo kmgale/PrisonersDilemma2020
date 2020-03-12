@@ -1,6 +1,6 @@
 team_name = 'EEE-UR'
-strategy_name = 'Our milkshakes brings all the Bodens to the yard'
-strategy_description = 'Kermit the frog will turn into emperor palpatine'
+strategy_name = 'You only get one chance...'
+strategy_description = 'If they have betrayed ANYONE EVER, betray them.'
 
 def move(my_history, their_history, my_score, their_score):
   if len(my_history) == 0:
