@@ -2,7 +2,7 @@ import random
 
 team_name = '11'
 strategy_name=  'The golden ho'
-strategy_description = 'We will betray on the first one and if they betray the second one we will betray again'
+strategy_description = 'We will betray on the first one and if they betray the second time we will betray again'
     
 
 
