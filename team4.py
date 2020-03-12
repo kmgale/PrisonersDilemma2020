@@ -19,10 +19,10 @@ def move(my_history, their_history, my_score, their_score):
     Make my move.
     Returns 'c' or 'b'. 
     '''
-    if len(my_history) == 0:
+    if len(my_history) < 5:
       return 'c'
     elif their_history[-5] == 'b' and their_history[-4] == 'b' and their_history[-3] == 'b' and their_history[-2] == 'b' and their_history[-1] == 'b' :
-      if random() < .5:
+      if random.randint() < .6:
             return 'b'
       else:
             return 'c'
