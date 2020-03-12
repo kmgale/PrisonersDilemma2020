@@ -7,9 +7,9 @@
 ####
 import random
 
-team_name = 'BRUH'
+team_name = 'Team4'
 strategy_name = 'Vengeance'
-strategy_description = 'if they '
+strategy_description = 'if they betrayed in the last 5 turns theres a 50% cance of betraying else collude.  '
     
 
 
@@ -21,8 +21,10 @@ def move(my_history, their_history, my_score, their_score):
     '''
     if len(my_history) == 0:
       return 'c'
-    elif their_history[-5] == 'b' :
+    elif their_history[-5] == 'b' and their_history[-4] == 'b' and their_history[-3] == 'b' and their_history[-2] == 'b' and their_history[-1] == 'b' :
       if random() < .5:
-        return 'b'
+            return 'b'
       else:
+            return 'c'
+    else:
         return 'c'
